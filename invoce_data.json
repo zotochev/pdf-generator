@@ -1,0 +1,26 @@
+{
+  "meta": {},
+  "hotel": {},
+  "guest": {},
+  "total": {},
+  "items": [
+    {
+	  "room": "000",
+	  "guest": "Qwert Wertyu",
+	  "call_start": "2023-03-15 17:01:19.799711+01:00",
+	  "call_party_number": "+390473860419XXX",
+	  "duration": 24,
+	  "cost_per_minute": "0.11",
+	  "total_cost": 2.64
+	},
+	{
+	  "room": "000",
+	  "guest": "Qwert Wertyu",
+	  "call_start": "2023-03-15 11:05:14.799711+01:00",
+	  "call_party_number": "+390473860018XXX",
+	  "duration": 52,
+	  "cost_per_minute": "0.11",
+	  "total_cost": 5.72
+	}
+  ]
+}
