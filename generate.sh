@@ -1,9 +1,12 @@
 #!/usr/bin/env bash
 
-TEMPLATE_PATH="templates/invoice-template-0"
+TEMPLATE="invoice-template-0"
+TEMPLATE_PATH="templates/$TEMPLATE"
+RESULT_PATH="results/$TEMPLATE"
+DATA_PATH="./invoice_data.json"
 
 # generate html from template
-python main "$TEMPLATE_PATH"
+python main.py "$TEMPLATE_PATH" -d "$DATA_PATH"
 
 # generate pdf from html
-weasyprint -s "$TEMPLATE_PATH/invoice.css" "$TEMPLATE_PATH/invoice.html" results/invoice-$(date +"%d%m%Y%H%M%S").pdf
+ weasyprint -s "$RESULT_PATH/invoice.css" "$RESULT_PATH/index.html" results/invoice-$(date +"%d%m%Y%H%M%S").pdf
